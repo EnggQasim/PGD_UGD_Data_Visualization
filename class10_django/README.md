@@ -24,7 +24,7 @@
 
 ### Create new application in current project
 `python manage.py startapp <polls>`
-* create new file in **<polls>/urls.py**
+* create new file in **polls/urls.py**
 ```
 from django.urls import path
 from . import views # import views.py file here
@@ -34,7 +34,7 @@ urlpatterns = [
     path("about", views.about,  name='about')
 ]
 ```
-* **<polls>/views.py**
+* **polls/views.py**
 
 ```
 from django.shortcuts import HttpResponse
